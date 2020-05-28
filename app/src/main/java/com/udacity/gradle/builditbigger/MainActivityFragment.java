@@ -39,7 +39,7 @@ public class MainActivityFragment extends Fragment {
                 .build();
         mAdView.loadAd(adRequest);
 
-  
+
         return root;
     }
 }

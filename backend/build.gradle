@@ -31,9 +31,10 @@ dependencies {
     implementation 'javax.servlet:servlet-api:2.5'
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
+    implementation project(path: ':javaJokes')
 }
 
 appengine{
     //HERE add the path to your google cloud sdk directory like what i did here
-    tools.cloudSdkHome="E:\\google-cloud-sdk"
+    tools.cloudSdkHome="E:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk"
 }
