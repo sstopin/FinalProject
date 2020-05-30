@@ -27,12 +27,12 @@ class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
                     // ­ turn off compression when running against local devappserver
                     .setRootUrl("https://10.0.2.2:8080/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
-                        @Override                         public void initialize(AbstractGoogleClientRequest<?>
-                                                                                         abstractGoogleClientRequest) throws IOException {
-                            abstractGoogleClientRequest.setDisableGZipContent(true);
+                        @Override
+                        public void initialize(AbstractGoogleClientRequest<?>
+                            abstractGoogleClientRequest) throws IOException {
+                                abstractGoogleClientRequest.setDisableGZipContent(true);
                         }
                     });
-            // end options for devappserver
 
             myApiService = builder.build();
         }
