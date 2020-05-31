@@ -34,4 +34,5 @@
             android:theme="@android:style/Theme.Translucent" />
     </application>
 
+
 </manifest>
